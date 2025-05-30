@@ -30,10 +30,12 @@ public class SpringJdbcApplication implements ApplicationRunner {
         long count = memberRepository.count();
         log.info("count = {}", count);
 
-        Member member = memberRepository.findByName("윤서준").getFirst();
+        Member member = memberRepository.findByName("윤지웅").getFirst();
         log.info("member = {}", member);
+        memberRepository.delete((member));
 
         member = memberRepository.findByNameOrEmail("윤서준", "SubinJung@hanbit.co.kr").getFirst();
         log.info("member = {}", member);
+        memberRepository.delete((member));
     }
 }
