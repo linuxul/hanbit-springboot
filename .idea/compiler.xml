@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Gradle Imported" enabled="true">
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.38/57f8f5e02e92a30fd21b80cbd426a4172b5f8e29/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="mybatis.test" />
-        <module name="mybatis.main" />
-      </profile>
-    </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="1-2-1" target="21" />
       <module name="1-2-1.main" target="21" />
@@ -45,9 +35,15 @@
       <module name="ioc" options="-parameters" />
       <module name="ioc.main" options="-parameters" />
       <module name="ioc.test" options="-parameters" />
+      <module name="jpa" options="-parameters" />
+      <module name="jpa.main" options="-parameters" />
+      <module name="jpa.test" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="mybatis.main" options="-parameters" />
       <module name="mybatis.test" options="-parameters" />
+      <module name="querydsl" options="-parameters" />
+      <module name="querydsl.main" options="-parameters" />
+      <module name="querydsl.test" options="-parameters" />
       <module name="spring-jdbc" options="-parameters" />
       <module name="spring-jdbc.main" options="-parameters" />
       <module name="spring-jdbc.test" options="-parameters" />
