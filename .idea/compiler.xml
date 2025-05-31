@@ -7,7 +7,7 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.38/57f8f5e02e92a30fd21b80cbd426a4172b5f8e29/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="thymeleaf.main" />
+        <module name="bbs.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +32,9 @@
       <module name="aop" options="-parameters" />
       <module name="aop.main" options="-parameters" />
       <module name="aop.test" options="-parameters" />
+      <module name="bbs" options="-parameters" />
+      <module name="bbs.main" options="-parameters" />
+      <module name="bbs.test" options="-parameters" />
       <module name="ch01-aop" options="-parameters" />
       <module name="ch01-aop.main" options="-parameters" />
       <module name="ch01-aop.test" options="-parameters" />
@@ -59,6 +62,9 @@
       <module name="restful" options="-parameters" />
       <module name="restful.main" options="-parameters" />
       <module name="restful.test" options="-parameters" />
+      <module name="security" options="-parameters" />
+      <module name="security.main" options="-parameters" />
+      <module name="security.test" options="-parameters" />
       <module name="spring-jdbc" options="-parameters" />
       <module name="spring-jdbc.main" options="-parameters" />
       <module name="spring-jdbc.test" options="-parameters" />
