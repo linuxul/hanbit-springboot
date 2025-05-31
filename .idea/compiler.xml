@@ -7,7 +7,7 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.38/57f8f5e02e92a30fd21b80cbd426a4172b5f8e29/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="restful.main" />
+        <module name="mongodb.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -47,6 +47,9 @@
       <module name="jpa" options="-parameters" />
       <module name="jpa.main" options="-parameters" />
       <module name="jpa.test" options="-parameters" />
+      <module name="mongodb" options="-parameters" />
+      <module name="mongodb.main" options="-parameters" />
+      <module name="mongodb.test" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="mybatis.main" options="-parameters" />
       <module name="mybatis.test" options="-parameters" />
