@@ -1,5 +1,5 @@
 # 이것이 스프링 부트다 with 자바
-[도서 구매 링크](https://www.hanbit.co.kr/)
+[도서 구매 링크](https://www.yes24.com/product/goods/147648741)
 ![banner](./.book/banner.png)
 
 ## 실습 프로젝트
