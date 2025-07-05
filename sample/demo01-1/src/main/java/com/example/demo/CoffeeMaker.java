@@ -5,14 +5,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class CoffeeMaker {
     @Autowired
-    @Qualifier("dripCoffeeMachine")
-    private CoffeeMachine coffeeMachine;
-
+    private List<CoffeeMachine> coffeeMachines;
+    
     @PostConstruct
     public void makeCoffee() {
-        System.out.println(coffeeMachine.brew());
+
+        for (CoffeeMachine machine : coffeeMachines) {
+            System.out.println(machine.brew());
+        }
     }
 }
