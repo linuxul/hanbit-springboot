@@ -29,9 +29,9 @@ public interface ArticleMapper {
     List<Article> selectByMemberId(@Param("memberId") Long memberId);
 
     @Insert("""
-        INSERT INTO article(title, descriptioin, created, updated, member_id)
+        INSERT INTO article(title, description, created, updated, member_id)
                 VALUES(#{article.title}, #{article.description}, 
-                       CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, #{article.member_id})
+                       CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, #{article.memberId})
     """)
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     int insert(@Param("article") Article article);
@@ -44,13 +44,13 @@ public interface ArticleMapper {
     """)
     int update(@Param("id") Long id, @Param("title") String title, @Param("description") String description);
 
-    @Delete("DELETE article WHERE id=#{id}")
+    @Delete("DELETE FROM article WHERE id=#{id}")
     int deleteById(@Param("id") Long id);
 
-    @Delete("DELETE article WHERE member_id=#{memberId}")
+    @Delete("DELETE FROM article WHERE member_id=#{memberId}")
     int deleteByMemberId(@Param("memberId") Long memberId);
 
-    @Delete("DELETE article")
+    @Delete("DELETE FROM article")
     int deleteAll();
 
 }

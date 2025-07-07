@@ -10,8 +10,8 @@ CREATE TABLE article (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(256),
     description VARCHAR(4096),
-    created DATATIME,
-    updated DATATIME,
+    created DATETIME,
+    updated DATETIME,
     member_id INTEGER,
     FOREIGN KEY(member_id) REFERENCES member(id) ON DELETE CASCADE
 );
