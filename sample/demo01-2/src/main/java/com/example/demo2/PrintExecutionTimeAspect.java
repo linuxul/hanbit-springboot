@@ -47,7 +47,7 @@ public class PrintExecutionTimeAspect {
             pointcut = "@annotation(PrintExecuteTime)",
             throwing = "ex"
     )
-    public void afterThrowing(JoinPoint joinPoint, Throwable ex) {
+    public void afterThrowing(JoinPoint joinPoint, Throwable ex) { ㅍㅍㅅ
         System.out.println("afterThrowing " + joinPoint.toShortString() +
                 " with " + joinPoint.getArgs().length +
                 " args throwing " + ex.toString());

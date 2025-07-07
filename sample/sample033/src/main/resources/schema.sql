@@ -1,0 +1,17 @@
+
+CREATE TABLE member (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    email VARCHAR(256) NOT NULL UNIQUE,
+    age INTEGER
+);
+
+CREATE TABLE article (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(256),
+    description VARCHAR(4096),
+    created DATATIME,
+    updated DATATIME,
+    member_id INTEGER,
+    FOREIGN KEY(member_id) REFERENCES member(id) ON DELETE CASCADE
+);
