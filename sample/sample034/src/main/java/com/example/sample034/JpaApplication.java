@@ -1,5 +1,6 @@
 package com.example.sample034;
 
+import com.example.sample034.model.Member;
 import com.example.sample034.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
