@@ -31,4 +31,6 @@ public class Member {
 
     @Transient
     private String address;
+
+
 }
