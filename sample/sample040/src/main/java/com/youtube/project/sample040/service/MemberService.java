@@ -37,7 +37,7 @@ public class MemberService {
         return mapToMemberResponse(member);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = {Exception.class})
     public List<MemberResponse> createBatch(List<MemberRequest> memberRequests) {
         return memberRequests.stream().map(this::create).toList();
     }
