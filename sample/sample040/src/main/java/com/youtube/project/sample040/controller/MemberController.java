@@ -79,5 +79,5 @@ public class MemberController {
                 .getRequestDispatcher("/api/articles?memberId=" + id)
                 .forward(request, response);
     }
-    
+
 }
